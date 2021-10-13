@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import { BrowserRouter as Router , Route , Switch} from 'react-router-dom';
+import Practices from './component/Practices';
+
+ReactDOM.render(
+  
+  <Router>
+    <Switch>
+      <Route exact path="/" component={App} />
+      <Route exact path="/pract" component={Practices} />
+    </Switch>
+  </Router>
+  ,
+  document.getElementById('root')
+);
+
